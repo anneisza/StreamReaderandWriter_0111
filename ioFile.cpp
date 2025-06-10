@@ -9,4 +9,11 @@ int main(){
     ofstream outfile;
     //menunjuk ke sebuah nama file
 
+    while (true)
+    {
+        cout<< "-"
+        //mendapatkan karakter dalam satu baris
+    }
+    
+
 }
