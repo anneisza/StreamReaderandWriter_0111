@@ -32,6 +32,17 @@ int main(){
     //menunjuk ke sebuah file
     infile.open(namaFile, ios::in);
     cout << endl << ">= Membuka dan membaca file"<<endl;
+     //jika file ada maka
+    if (infile.is_open())
+    {
+        //melakukan perulangan setiap baris
+        while (getline(infile, baris))
+        {
+            //dan tampilkan di sini
+            cout<< baris << '\n';
+        }
+        
+    }
     
 
 

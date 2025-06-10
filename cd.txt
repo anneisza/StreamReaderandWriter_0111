@@ -1,1 +1,0 @@
- "d:\PEMDAS\Pertemuan 13\" ; if ($?) { g++ ioFile.cpp -o ioFile } ; if ($?) { .\ioFile }
