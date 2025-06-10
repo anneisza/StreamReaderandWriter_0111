@@ -4,5 +4,7 @@
 using namespace std;
 
 int main(){
-    
+    string baris;
+    //membuaka file dalam mode menulis
+
 }
