@@ -1,21 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     try
     {
-        cout<< "Selamat belajar di Prodi TI UMY"<<endl;
-        throw 0.5;//melemparkan sebuah integer maka
-        cout<< "Pernyataan tidak akan dieksekusi"<<endl;
+        cout << "Selamat belajar di Prodi TI UMY" << endl;
+        throw 0.5; // melemparkan sebuah integer maka
+        cout << "Pernyataan tidak akan dieksekusi" << endl;
     }
-    catch(int a)
+    catch (int a)
     {
-        //blok ini akan dieksekusi
-        cout<< "Pengecualian akan dieksekusi"<<endl;
+        // blok ini akan dieksekusi
+        cout << "Pengecualian akan dieksekusi" << endl;
     }
-    catch(...){
+    catch (...)
+    {
         /*jika selain integer maka blok ini akan dieksekusi*/
-        cout<< "Default Pengecualian dieksekusi"<<endl;
+        cout << "Default Pengecualian dieksekusi" << endl;
     }
     return 0;
 }

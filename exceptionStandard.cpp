@@ -1,26 +1,27 @@
-#include<iostream>
-#include<exception>
-//untuk obyek exception yang akan digunakan
-#include<array>
-//untuk obyek array yang akan kita digunakan
+#include <iostream>
+#include <exception>
+// untuk obyek exception yang akan digunakan
+#include <array>
+// untuk obyek array yang akan kita digunakan
 using namespace std;
 
-int main(){
-    cout<< "Awal Program"<< endl; //penanda 1:...
+int main()
+{
+    cout << "Awal Program" << endl; // penanda 1:...
     try
     {
         array<int, 3> data = {10, 20, 30};
-        //pesan array integer 3 elemen
-        cout<<data.at(5)<<endl;
-        //memanggil array elemen ke 5
+        // pesan array integer 3 elemen
+        cout << data.at(5) << endl;
+        // memanggil array elemen ke 5
     }
-    catch(exception& e)
+    catch (exception &e)
     {
-        //penangkapan menggunakan obyek exception
-        cout<< e.what() << endl;
+        // penangkapan menggunakan obyek exception
+        cout << e.what() << endl;
         /*akan dieksekusi karena array data hanya memiliki 3 elemen*/
     }
-    cout<< "Baris program yang terakhir" <<endl;
+    cout << "Baris program yang terakhir" << endl;
     /*penanda 2: bahwa program berjalan tanpa berhenti
     meskipun terjadi kesalahan*/
     return 0;
